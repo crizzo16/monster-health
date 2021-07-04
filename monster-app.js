@@ -63,6 +63,7 @@ let virtu = {
         }
     },
     submitHP: function() {
+        console.log(virtu.monster);
         if (virtu.hitPoints > 0 && virtu.monster > 0) {
             virtu.polarity = $(this).attr("pol");
             let enemyHP = eval("virtu.monster" + virtu.monster + "HP");
